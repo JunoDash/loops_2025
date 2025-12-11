@@ -88,7 +88,10 @@
 
 def finioncci(n):
 
-    if n == 1 or n in [1, 2]:
+    if n == 1:
+        return 0
+    
+    if n == 2:
         return 1
 
     return finioncci(n - 1) + finioncci(n - 2)
